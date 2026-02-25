@@ -2,7 +2,7 @@ name: Ejecución Diaria de Reporte de Días Hábiles
 
 on:
   schedule:
-    - cron: '10 14 * * *'
+    - cron: '58 14 * * *'
   workflow_dispatch: # Permite ejecutar el script manualmente desde la pestaña "Actions"
 
 jobs:
