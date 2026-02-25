@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 def enviar_correo(reporte_texto, reporte_html):
     # --- CONFIGURACIÓN DEL CORREO ---
     remitente = "sanhuesoft@gmail.com"
-    destinatario = "contacto@fabiansanhueza.cl"
+    destinatario = "fabian.sanhueza@lbcsma.cl"
     password = os.getenv("GMAIL_PASSWORD")
     
     msg = EmailMessage()
