@@ -3,7 +3,7 @@ name: Ejecución Diaria de Reporte de Días Hábiles
 on:
   schedule:
     # Se ejecuta todos los días a las 12:00 UTC (aprox. 09:00 AM en Chile)
-    - cron: '01 09 * * *'
+    - cron: '03 14 * * *'
   workflow_dispatch: # Permite ejecutar el script manualmente desde la pestaña "Actions"
 
 jobs:
