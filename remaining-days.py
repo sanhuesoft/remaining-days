@@ -90,10 +90,10 @@ if __name__ == "__main__":
         # 1. Reporte para la Consola (Texto plano)
         reporte_consola = (
             "------------- Desglose del Calendario -------------\n"
-            f"Sábados descontados: {resultado['sabados']}\n"
-            f"Domingos descontados: {resultado['domingos']}\n"
-            f"Feriados (en días hábiles): {resultado['feriados']}\n"
-            f"Días de vacaciones invierno (Lun-Vie): {resultado['vacaciones']}\n"
+            f"Sábados pendientes: {resultado['sabados']}\n"
+            f"Domingos pendientes: {resultado['domingos']}\n"
+            f"Feriados hábiles pendientes: {resultado['feriados']}\n"
+            f"Días de vacaciones pendientes (Lun-Vie): {resultado['vacaciones']}\n"
             f"{'-' * 51}\n"
             f"TOTAL DÍAS HÁBILES RESTANTES: {resultado['habiles']}\n"
             f"{'-' * 51}"
@@ -105,15 +105,14 @@ if __name__ == "__main__":
             <body>
                 <p>Buenos días,</p>
                 <p></p>
-                <p>Me complace informar que quedan <b>{resultado['habiles']}</b> días hábiles.</p>
-                <p></p>
-                <p>Desglose de días:</p>
+                <p>Adjunto el detalle de los días pendientes:</p>
                 <ul>
-                    <li>Sábados descontados: {resultado['sabados']}</li>
-                    <li>Domingos descontados: {resultado['domingos']}</li>
-                    <li>Feriados (en días hábiles): {resultado['feriados']}</li>
-                    <li>Días de vacaciones invierno (Lun-Vie): {resultado['vacaciones']}</li>
+                    <li>Sábados pendientes: {resultado['sabados']}</li>
+                    <li>Domingos pendientes: {resultado['domingos']}</li>
+                    <li>Feriados hábiles pendientes: {resultado['feriados']}</li>
+                    <li>Días de vacaciones pendientes (Lun-Vie): {resultado['vacaciones']}</li>
                 </ul>
+                <p>En total quedan <b>{resultado['habiles']}</b> días hábiles.</p>
                 <p></p>
                 <p>Atte.<br/>FSV-Bot</p>
             </body>
